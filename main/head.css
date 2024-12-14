@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Вирівнює елементи на головній осі */
+  align-items: center; /* Вирівнює елементи вертикально */
+  background-color: #3b3b8f;
+  padding: 10px 20px;
+  color: white;
+}
+
+header .center {
+  flex-grow: 1; /* Забезпечує центр для навігації */
+  display: flex;
+  justify-content: center; /* Вирівнює кнопки по центру */
+  gap: 10px;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #c0865b; /* Колір рамки */
+  border-radius: 10px;
+  background-color: #e5e3e3; /* Колір фону */
+
+  height: 30px;
+  width: 500px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: gray;
+  flex-grow: 1;
+}
+
+.search-button {
+  background-color: #689ccf; /* Колір кнопки */
+  border: 2px solid #c0865b; /* Колір рамки */
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color:#000;
+  border-radius: 10px
+}
+
+.search-button:hover {
+  background-color: #577faa; /* Колір кнопки при наведенні */
+}
+
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid #000;
+}
+
+.color.brown {
+  background-color: #8b4513;
+}
+
+.color.beige {
+  background-color: #f5f5dc;
+}
+
+.btn {
+  background-color: #3b3b8f;
+  color: white;
+  border: 2px solid #c0865b;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #29295e;
+}
+
+.btn-add-to-cart{
+  background-color: #3b3b8f;
+  color: white;
+  border: 2px solid #c0865b;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+}
+.btn-add-to-cart:hover {
+  background-color: #29295e;
+}
+footer {
+  display: flex;
+  justify-content: space-between; /* Розподіляє секції футера */
+  align-items: center; /* Центрує вертикально */
+  background-color: #3b3b8f;
+  padding: 20px;
+  color: white;
+}
+
+footer > div {
+  text-align: center; /* Центрує текст у кожній секції */
+  flex: 1; /* Додає рівний простір між секціями */
+}
+
+footer .social,
+footer .status,
+footer .contact {
+  text-align: center;
+}
+
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+footer .contact img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a img {
+  transition: transform 0.2s;
+}
+
+footer a:hover img {
+  transform: scale(1.1);
+}
