@@ -23,7 +23,12 @@ header .center {
   gap: 10px;
 
 }
-
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3b3b8f; /* Match the theme color */
+  margin: 1px 0;
+}
 .center {
   display: flex;
   justify-content: center;
