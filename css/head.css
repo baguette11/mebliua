@@ -214,4 +214,8 @@ footer a:hover img {
   display:flex;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
+}
+.remove-btn{
+  cursor: pointer;
 }
