@@ -27,13 +27,13 @@ let products_list = document.querySelector(".product-list")
 function getCard(product){
     return  `
     <div class="product-item">
-                <img src="../images${product.image}" alt="Ліжко">
-                <p>Двоспальне ліжко Еверест Асторія з двома ящиками 160x200 см венге/дуб молочний (EVR-2488)${product.title}</p>
+                <img class='img' src="images/${product.image}" alt="Ліжко">
+                <p>${product.title}</p>
                 <p class="price">${product.price} грн</p> 
                
                    
               
-                <button class="btn-add-to-cart">🛒Додати у кошик</button>
+                <button class="btn-add-to-cart" data-product='${JSON.stringify(product)}'>🛒Додати у кошик</button>
             </div>
             `
 }
@@ -100,9 +100,9 @@ getProducts().then(function(products){
 function getCartItem(product){
     return  `
          <div class="card my-2">
-                <div class="row m-2 ">
+                
                     <div class="col-2">
-                        <img src="img/${product.image}" class="img-fluid">
+                        <img src="images/${product.image}" class="img-fluid">
                     </div>
                     <div class="col-6">
                         <h5>${product.title}</h5>
@@ -111,12 +111,12 @@ function getCartItem(product){
                     <div class="col-2">
                         <h4>${product.price * product.quantity} грн</h4>
                     </div>
-                </div>
+                
             </div>
     `
 }
 
-let cart_list = document.querySelector(".сart-list")
+let cart_list = document.querySelector(".cart-list")
 
 if (cart_list){
     cart_list.innerHTML =''

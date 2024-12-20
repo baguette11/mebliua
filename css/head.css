@@ -78,12 +78,27 @@ header .center {
   cursor: pointer;
 }
 
-.product-list {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
+main{
+  flex: 1 1 auto;
+  padding: 50px 0px;
+  max-width: 1200px;
+  margin: 0 auto;  
 }
 
+.product-list {
+
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.img{
+  width: 100%; 
+  height: auto; 
+}
 .product-item {
   border: 1px solid #ccc;
   padding: 15px;
@@ -125,6 +140,7 @@ header .center {
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration:none;
 }
 
 .btn:hover {
@@ -192,4 +208,10 @@ footer a img {
 
 footer a:hover img {
   transform: scale(1.1);
+}
+
+.card{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
 }
