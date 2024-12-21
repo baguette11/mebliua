@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Catalog</title>
+    <link rel="stylesheet" href="css/head.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>UA Furniture</h1>
+        </div>
+        <nav class="center">
+            <a href="index.html" class="btn">каталог</a>
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="Введіть назву товару">
+                <button class="search-button">Пошук</button>
+            </div>
+            <a href="cart.html" class="btn">Кошик</a>
+        </nav>
+        <div class="profile-icon">
+            <img src="images/user.png" alt="" />
+        </div>
+    </header>
+    <main>
+        <section class="product-buy">
+            <div class="form-container">
+                <form>
+                  <label for="name">Введіть ваше ім'я та прізвище</label>
+                  <input type="text" id="name" placeholder="ПІБ">
+            
+                  <label for="phone">Номер телефону</label>
+                  <input type="text" id="phone" placeholder="380">
+            
+                  <label for="email">Електронна адреса</label>
+                  <input type="email" id="email" placeholder="name@example.com">
+            
+                  <label for="delivery">Виберіть службу доставки</label>
+                  <select id="delivery">
+                    <option value="">Оберіть...</option>
+                    <option value="nova_poshta">Нова Пошта</option>
+                    <option value="ukr_poshta">Укрпошта</option>
+                  </select>
+            
+                  <label for="address">Введіть адресу доставки</label>
+                  <input type="text" id="address" placeholder="Місто, вулиця, будинок, квартира">
+            
+                  <label for="comment">Коментар до замовлення</label>
+                  <textarea id="comment" placeholder="Ваш коментар..."></textarea>
+            
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="no-call">
+                    <label for="no-call">Не передзвонювати</label>
+                  </div>
+            
+                  <button type="submit">Підтвердити</button>
+                </form>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <p>Ми у соціальних мережах:</p>
+            <div class='socials'>
+            <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+            <a href="#"><img src="images/telegram.png" alt="Telegram"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+        <div class="status">
+            <p>Роботу виконано</p>
+        </div>
+        <div class="contact">
+            <p>Якщо у вас виникла проблема, то зателефонуйте нам:</p>
+            <p><img src="images/phone.png" alt=""> +38(093)56345</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
