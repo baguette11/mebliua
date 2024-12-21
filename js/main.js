@@ -27,7 +27,7 @@ let products_list = document.querySelector(".product-list")
 function getCard(product) {
     return `
     <div class="product-item">
-                <img class='img' src="images/${product.image}" alt="Ліжко">
+                <img class='image' src="images/${product.image}" alt="">
                 <p>${product.title}</p>
                 <p class="price">${product.price} грн</p> 
                
